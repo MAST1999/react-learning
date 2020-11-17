@@ -1,7 +1,8 @@
 // import logo from './logo.svg';
 import './App.css';
-import ClassClick from './components/ClassClick';
-import FunctionClick from './components/FunctionClick';
+import EventBind from './components/EventBind';
+// import ClassClick from './components/ClassClick';
+// import FunctionClick from './components/FunctionClick';
 // import Counter from './components/Counter';
 // import Greet from "./components/Greet"
 // import Welcome from "./components/Welcome"
@@ -15,11 +16,12 @@ function App() {
       {/* <Greet name="Ali" heroName="DeadMeat"><p>This is children props</p></Greet> */}
       {/* <Greet name="Mast" heroName="Caged"><button>Actions</button></Greet> */}
       {/* <Greet name="Reza" heroName="Hmm"></Greet> */}
-      <FunctionClick />
+      {/* <FunctionClick /> */}
       {/* <Welcome name="Ali" heroName="DeadMeat" /> */}
       {/* <Welcome name="Mast" heroName="Caged" /> */}
       {/* <Welcome name="Reza" heroName="Hmm" /> */}
-      <ClassClick></ClassClick>
+      {/* <ClassClick></ClassClick> */}
+      <EventBind></EventBind>
     </div>
   );
 }
