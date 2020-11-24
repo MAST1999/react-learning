@@ -1,7 +1,8 @@
 // import logo from './logo.svg';
 import './App.css';
 // import EventBind from './components/EventBind';
-import ParentComponent from './components/ParentComponent';
+// import ParentComponent from './components/ParentComponent';
+import UserGreetings from './components/UserGreetings';
 // import ClassClick from './components/ClassClick';
 // import FunctionClick from './components/FunctionClick';
 // import Counter from './components/Counter';
@@ -23,7 +24,8 @@ function App() {
       {/* <Welcome name="Reza" heroName="Hmm" /> */}
       {/* <ClassClick></ClassClick> */}
       {/* <EventBind></EventBind> */}
-      <ParentComponent></ParentComponent>
+      {/* <ParentComponent></ParentComponent> */}
+      <UserGreetings></UserGreetings>
     </div>
   );
 }
