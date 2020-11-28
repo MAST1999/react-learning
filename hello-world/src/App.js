@@ -1,8 +1,9 @@
 // import logo from './logo.svg';
 import './App.css';
+import NameList from './components/NameList';
 // import EventBind from './components/EventBind';
 // import ParentComponent from './components/ParentComponent';
-import UserGreetings from './components/UserGreetings';
+// import UserGreetings from './components/UserGreetings';
 // import ClassClick from './components/ClassClick';
 // import FunctionClick from './components/FunctionClick';
 // import Counter from './components/Counter';
@@ -25,7 +26,8 @@ function App() {
       {/* <ClassClick></ClassClick> */}
       {/* <EventBind></EventBind> */}
       {/* <ParentComponent></ParentComponent> */}
-      <UserGreetings></UserGreetings>
+      {/* <UserGreetings></UserGreetings> */}
+      <NameList></NameList>
     </div>
   );
 }
