@@ -4,7 +4,7 @@ import Person from './Person'
 
 function NameList() {
     const names = ['ali', 'amin', 'reza']
-    const nameList = names.map(name => <h2>{name}</h2>)
+    const nameList = names.map(name => <h2 key={name}>{name}</h2>)
     const persons = [
         {
             id: 1,
@@ -25,7 +25,7 @@ function NameList() {
             skill: 'Javascript'
         }
     ]
-    const personList = persons.map(person => <Person person={person}></Person>)
+    const personList = persons.map(person => <Person key={person.id} person={person}></Person>)
     return (
         <div>
             {nameList}
