@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
+import Inline from './components/Inline';
 import NameList from './components/NameList';
 // import EventBind from './components/EventBind';
 // import ParentComponent from './components/ParentComponent';
@@ -10,10 +11,16 @@ import NameList from './components/NameList';
 // import Greet from "./components/Greet"
 // import Welcome from "./components/Welcome"
 // import Message from "./components/Message"
+import StyleSheet from './components/StyleSheet';
+import './AppStyles.css'
+import Styles from './AppStyles.module.css'
 
 function App() {
   return (
     <div className="App">
+      <StyleSheet primary={true}></StyleSheet>
+      <h2 className='error'>Error</h2>
+      <h2 className={Styles.success}>success</h2>
       {/* <Message></Message> */}
       {/* <Counter></Counter> */}
       {/* <Greet name="Ali" heroName="DeadMeat"><p>This is children props</p></Greet> */}
@@ -28,6 +35,7 @@ function App() {
       {/* <ParentComponent></ParentComponent> */}
       {/* <UserGreetings></UserGreetings> */}
       <NameList></NameList>
+      <Inline></Inline>
     </div>
   );
 }
