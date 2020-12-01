@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
-import Form from './components/Form';
+// import Form from './components/Form';
+import LifeCycleA from './components/LifeCycleA';
 // import Inline from './components/Inline';
 // import NameList from './components/NameList';
 // import EventBind from './components/EventBind';
@@ -37,7 +38,8 @@ function App() {
       {/* <UserGreetings></UserGreetings> */}
       {/* <NameList></NameList> */}
       {/* <Inline></Inline> */}
-      <Form></Form>
+      {/* <Form></Form> */}
+      <LifeCycleA></LifeCycleA>
     </div>
   );
 }
