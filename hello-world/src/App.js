@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
-import ParentComp from './components/ParentComp'
 import './App.css'
+import RefsDemo from './components/RefsDemo'
 
 export class App extends Component {
   render() {
     return (
       <div className='App'>
-        <ParentComp></ParentComp>
+        <RefsDemo />
       </div>
     )
   }
