@@ -1,12 +1,22 @@
 import React, { Component } from 'react'
 import './App.css'
-import PortalDemo from './components/PortalDemo'
+import ErrorBoundary from './components/ErrorBoundary'
+import Hero from './components/Hero'
 
 export class App extends Component {
   render() {
     return (
       <div className='App'>
-        <PortalDemo />
+        <ErrorBoundary>
+          <Hero heroName='batman' />
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Hero heroName='superman' />
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Hero heroName='joker' />
+        </ErrorBoundary>
+
       </div>
     )
   }
