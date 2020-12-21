@@ -8,9 +8,9 @@ export class App extends Component {
   render() {
     return (
       <div className='App'>
-        <UserProvider value='Amin'>
-          <ComponentC />
-        </UserProvider>
+        {/* <UserProvider value='Amin'> */}
+        <ComponentC />
+        {/* </UserProvider> */}
       </div>
     )
   }
