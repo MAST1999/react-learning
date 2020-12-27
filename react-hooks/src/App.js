@@ -1,11 +1,11 @@
 import React from 'react'
 import './App.css';
-import CounterOne from './components/CounterOne';
+import Mouse from './components/Mouse';
 
 function App() {
   return (
     <div className="App">
-      <CounterOne />
+      <Mouse />
     </div>
   );
 }
