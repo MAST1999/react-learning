@@ -1,11 +1,11 @@
 import React from 'react'
 import './App.css';
-import IntervalCounter from './components/IntervalCounter';
+import DataFetching from './components/DataFetching';
 
 function App() {
   return (
     <div className="App">
-      <IntervalCounter />
+      <DataFetching />
     </div>
   );
 }
