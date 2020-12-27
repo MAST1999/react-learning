@@ -4,9 +4,10 @@ import axios from 'axios'
 function DataFetching() {
     const [post, setPosts] = useState({})
     const [idOfPost, setIdOfPost] = useState(1)
+    const [idFromButtonClick, setIdFromButtonClick] = useState(1)
 
     useEffect(() => {
-        axios.get(`https://jsonplaceholder.typicode.com/posts/${idOfPost}`)
+        axios.get(`https://jsonplaceholder.typicode.com/posts/${idFromButtonClick}`)
             .then(response => {
                 console.log(response);
                 setPosts(response.data)
@@ -14,11 +15,16 @@ function DataFetching() {
             .catch(error => {
                 console.log(error);
             })
-    }, [idOfPost])
+    }, [idFromButtonClick])
+
+    const handelClick = () => {
+        setIdFromButtonClick(idOfPost)
+    }
 
     return (
         <div>
             <input type='number' value={idOfPost} onChange={e => setIdOfPost(e.target.value)} />
+            <button type='button' onClick={handelClick}>Fetch Post</button>
             {
                 <div>{post.title}</div>
             }
