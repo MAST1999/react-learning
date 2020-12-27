@@ -1,11 +1,11 @@
 import React from 'react'
 import './App.css';
-import MouseContainer from './components/MouseContainer';
+import IntervalCounter from './components/IntervalCounter';
 
 function App() {
   return (
     <div className="App">
-      <MouseContainer />
+      <IntervalCounter />
     </div>
   );
 }

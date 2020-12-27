@@ -15,7 +15,7 @@ function Mouse() {
         window.addEventListener('mousemove', logMousePosition)
 
         return () => {
-            console.log('unmounting');
+            console.log('unMounting');
             window.removeEventListener('mousemove', logMousePosition)
         }
     }, [])
