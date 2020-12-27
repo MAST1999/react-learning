@@ -2,10 +2,11 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 
 function DataFetching() {
-    const [posts, setPosts] = useState([])
+    const [post, setPosts] = useState({})
+    const [idOfPost, setIdOfPost] = useState(1)
 
     useEffect(() => {
-        axios.get('https://jsonplaceholder.typicode.com/posts')
+        axios.get(`https://jsonplaceholder.typicode.com/posts/${idOfPost}`)
             .then(response => {
                 console.log(response);
                 setPosts(response.data)
@@ -13,12 +14,13 @@ function DataFetching() {
             .catch(error => {
                 console.log(error);
             })
-    }, [])
+    }, [idOfPost])
 
     return (
         <div>
+            <input type='number' value={idOfPost} onChange={e => setIdOfPost(e.target.value)} />
             {
-                posts.map(post => <li key={post.id}>{post.title}</li>)
+                <div>{post.title}</div>
             }
         </div>
     )
