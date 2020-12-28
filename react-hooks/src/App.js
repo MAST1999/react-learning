@@ -1,18 +1,12 @@
 import React from 'react'
 import './App.css';
-import ComponentC from './components/ComponentC';
+import ReducerCounterOne from './components/ReducerCounterOne';
 
-export const UserContext = React.createContext()
-export const ChannelContext = React.createContext()
 
 function App() {
   return (
     <div className="App">
-      <UserContext.Provider value={'MAST'}>
-        <ChannelContext.Provider value={'Hello World!'}>
-          <ComponentC />
-        </ChannelContext.Provider>
-      </UserContext.Provider>
+      <ReducerCounterOne />
     </div>
   );
 }
