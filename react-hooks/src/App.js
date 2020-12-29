@@ -1,12 +1,12 @@
 import React from 'react'
 import './App.css';
-import ReducerCounterTwo from './components/ReducerCounterTwo';
+import ReducerCounterThree from './components/ReducerCounterThree';
 
 
 function App() {
   return (
     <div className="App">
-      <ReducerCounterTwo />
+      <ReducerCounterThree/>
     </div>
   );
 }
