@@ -1,11 +1,11 @@
 import React from 'react'
 import './App.css';
-import DataFetchingReducer from './components/DataFetchingReducer';
+import UseCallbackHook from './components/UseCallbackHook';
 
 function App() {
   return (
     <div className="App">
-      <DataFetchingReducer />
+      <UseCallbackHook />
     </div>
   );
 }
