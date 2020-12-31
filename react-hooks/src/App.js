@@ -1,11 +1,11 @@
 import React from 'react'
 import './App.css';
-import UseCallbackHook from './components/UseCallbackHook';
+import CounterMemo from './components/CounterMemo';
 
 function App() {
   return (
     <div className="App">
-      <UseCallbackHook />
+      <CounterMemo />
     </div>
   );
 }
